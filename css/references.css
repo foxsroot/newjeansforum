@@ -1,0 +1,32 @@
+main {
+    max-width: 80%;
+    margin: auto;
+}
+
+/* ul li {
+    list-style-image: url("../assets/icon/bunny-head-icon\ \(1\).svg");
+} */
+
+/* li {
+    background: url("../assets/icon/bunny-head-icon\ \(1\).svg") no-repeat top left;
+    margin: 0;
+    padding: 15px 0 4px 55px;
+    list-style: none;
+    height: 50px;
+  } */
+
+h2 {
+    margin-bottom: -15px;
+}
+
+ul li {
+    line-height: 45px;
+}
+
+ul li a {
+    color: white;
+}
+
+ul li a:hover {
+    color: rgb(69, 163, 221);
+}
