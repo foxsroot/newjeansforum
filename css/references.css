@@ -1,0 +1,21 @@
+main {
+    max-width: 80%;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: -15px;
+}
+
+ul li {
+    line-height: 45px;
+}
+
+ul li a {
+    color: white;
+    font-size: larger;
+}
+
+ul li a:hover {
+    color: rgb(69, 163, 221);
+}
