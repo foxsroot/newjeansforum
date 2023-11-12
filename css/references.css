@@ -3,18 +3,6 @@ main {
     margin: auto;
 }
 
-/* ul li {
-    list-style-image: url("../assets/icon/bunny-head-icon\ \(1\).svg");
-} */
-
-/* li {
-    background: url("../assets/icon/bunny-head-icon\ \(1\).svg") no-repeat top left;
-    margin: 0;
-    padding: 15px 0 4px 55px;
-    list-style: none;
-    height: 50px;
-  } */
-
 h2 {
     margin-bottom: -15px;
 }
@@ -25,6 +13,7 @@ ul li {
 
 ul li a {
     color: white;
+    font-size: larger;
 }
 
 ul li a:hover {
