@@ -58,9 +58,11 @@ nav ul li:hover > .nj-members{
     display: block;
 }
 
-nav ul ul li{
+ul ul li{
+    list-style-type: none;
     text-decoration: none;
     text-align: left;
+    word-spacing: 2px;
 }
 
 footer {
