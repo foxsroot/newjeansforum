@@ -46,6 +46,23 @@ nav ul li a:hover {
     text-shadow: 6px 2px 10px #ffffff ;
 }
 
+nav ul ul{
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 40px;
+    width:fit-content;
+}
+
+nav ul li:hover > .nj-members{
+    display: block;
+}
+
+nav ul ul li{
+    text-decoration: none;
+    text-align: left;
+}
+
 footer {
     background-color: black;
     height: 100px;
