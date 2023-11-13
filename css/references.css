@@ -14,8 +14,36 @@ ul li {
 ul li a {
     color: white;
     font-size: larger;
+    position: relative;
+}
+
+ul li a:before {
+    content: '';
+    transition: all 0.4s ease;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    background-color: #fff;
+    width: 0px;
+    height: 85%;
+}
+
+ul li a:hover:before {
+    z-index: -1;
+    opacity: 1;
+    width: 100%;
 }
 
 ul li a:hover {
     color: rgb(69, 163, 221);
+}
+
+ul li a:active {
+    color: #fff;
+}
+
+ul li a:active:before {
+    background-color: rgb(69, 163, 221);
 }

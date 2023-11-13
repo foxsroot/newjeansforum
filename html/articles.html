@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      color: #333333;
+      text-align: center;
+      padding-top: 40px;
+    }
+    .container {
+      width: 800px;
+      margin: 0 auto;
+    }
+    .artikel {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #333333;
+      margin: 0 0 10px;
+    }
+    p {
+      margin: 0;
+    }
+  </style>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Fungsi untuk menampilkan konten artikel secara dinamis
+      $(".artikel").on("click", function () {
+        $(this).find(".konten-artikel").slideToggle();
+        $(this).toggleClass("active");
+      });
+
+      // Fungsi untuk mengatur tampilan artikel yang hanya menampilkan judul
+      $(".artikel").each(function () {
+        var konten = $(this).find(".konten-artikel");
+        konten.hide();
+        $(this).addClass("collapsed");
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Informasi Terkini Grup Idol</h1>
+
+    <!-- Artikel 1 -->
+    <div class="artikel">
+      <h2>Judul Artikel 1</h2>
+      <p>Tanggal: 10 Januari 2022</p>
+      <div class="konten-artikel">
+        <p>Ini adalah konten dari artikel 1.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <img src="gambar1.jpg" alt="Gambar 1" />
+      </div>
+    </div>
+
+    <!-- Artikel 2 -->
+    <div class="artikel">
+      <h2>Judul Artikel 2</h2>
+      <p>Tanggal: 15 Januari 2022</p>
+      <div class="konten-artikel">
+        <p>Ini adalah konten dari artikel 2.</p>
+        <p>Fusce dolor massa, tristique scelerisque est et.</p>
+        <img src="gambar2.jpg" alt="Gambar 2" />
+      </div>
+    </div>
+
+    <!-- Artikel 3 -->
+    <div class="artikel">
+      <h2>Judul Artikel 3</h2>
+      <p>Tanggal: 20 Januari 2022</p>
+      <div class="konten-artikel">
+        <p>Ini adalah konten dari artikel 3.</p>
+        <p>Nullam a faucibus lacus, vitae ornare turpis.</p>
+        <img src="gambar3.jpg" alt="Gambar 3" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>
