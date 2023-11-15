@@ -28,13 +28,82 @@ switch(param) {
         $('#video-player').attr('src', memberVideos[index]);
 }
 
+changeVideo();
+
+$("#desc").mouseenter(function() {
+    $("#member-info").css({
+        "height": "100%",
+        "background-color": "rgba(52, 40, 143, 0.5)",
+        "opacity": "1",
+        "transition": "all 0.4s ease"
+    })
+})
+
+$("#desc").mouseleave(function() {
+    $("#member-info").css({
+        "height": "1px",
+        "opacity": "0",
+        "transition": "all 0.4s ease"
+    })
+})
+
+$("#prev").click(function() {
+    index--;
+    
+    if (index < 0) {
+        index  = 4;
+    }
+
+    changeParam();
+    changeVideo();
+})
+
+$("#next").click(function() {
+    index++;
+    
+    if (index > 4) {
+        index  = 0;
+    }
+
+    changeParam();
+    changeVideo();
+})
+
+
+//Function Change url param
+function changeParam() {
+    let memberName;
+    switch(index) {
+        case 0:
+            memberName = "minji";
+            break;
+        case 1:
+            memberName = "hani";
+            break;
+        case 2:
+            memberName = "danielle";
+            break;
+        case 3:
+            memberName = "haerin";
+            break;
+        default:
+            memberName = "hyein";
+    }
+
+    let url = new window.URL(document.location);
+    url.searchParams.set('member', memberName);
+    window.location.href = url.href;
+
+}
 
 //Change video regarding parameter value
-let video = memberVideos[index];
-
-$('#video-player').attr('src', video);
-$('#desc video')[0].load();
-
-$('#desc video').hover(function () {
+function changeVideo() {
+    let video = memberVideos[index];
     
-});
+    $('#video-player').attr('src', video);
+    $('#desc video')[0].load();
+    
+    $('#desc video').hover(function () {
+        
+    });
+}
