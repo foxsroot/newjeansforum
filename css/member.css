@@ -58,6 +58,7 @@ main {
     width: 40%;
     margin: 9%;
     border: solid 1px yellow;
+    position: relative;
     /* height: 100%; */
 }
 
@@ -72,10 +73,23 @@ main {
     margin: 10px;
 }
 
-
 video {
     width: 100%;
     opacity: 1;
     position: relative;
     z-index: 0;
+}
+
+#member-info {
+    position: absolute;
+    /* background-color: antiquewhite; */
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    opacity: 0;
+    overflow-y: scroll;
+}
+
+#member-info * {
+    margin-left: 15px;
 }
