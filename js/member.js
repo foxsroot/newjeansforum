@@ -1,5 +1,6 @@
 //Resources
 let memberVideos = ["../assets/videos/Minji.mp4", "../assets/videos/Hani.mp4", "../assets/videos/Danielle.mp4", "../assets/videos/Haerin.mp4", "../assets/videos/Hyein.mp4"];
+let memberImages = [["../assets/images/image7.png", "../assets/images/image17.png", "../assets/images/image19.png"], ["../assets/images/image5.png", "../assets/images/image13.png","../assets/images/image14.png"], ["../assets/images/image4.png", "../assets/images/image18.png", "../assets/images/image10.png"], ["../assets/images/image6.png", "../assets/images/image15.png","../assets/images/image16.png"], ["../assets/images/image9.png", "../assets/images/image11.png", "../assets/images/image12.png"]];
 let memName = ["민지", "하니", "다니엘", "해린", "혜인"];
 let stageName = ["Minji (민지)", "Hanni (하니)", "Danielle (다니엘)", "Haerin (해린)", "Hyein (혜인)"];
 let birthName = ["Kim Minji (김민지)", "Hanni Pham", "Danielle Marsh", "Kang Haerin (강해린)", "Lee Hyein (이혜인)"];
@@ -21,6 +22,7 @@ var url_param = new URLSearchParams(window.location.search);
 param = url_param.get('member');
 
 let index;
+let imgIndex = 0;
 
 //Check if parameter is not present
 if (param == null || param == 0) {
@@ -93,6 +95,25 @@ $("#next").click(function() {
     changeParam();
 })
 
+$("#prev-img").click(function() {
+    imgIndex--;
+
+    if (imgIndex < 0) {
+        imgIndex = 2;
+    }
+
+    changePhoto();
+})
+
+$("#next-img").click(function() {
+    imgIndex++;
+    
+    if (imgIndex > 2) {
+        imgIndex  = 0;
+    }
+
+    changePhoto();
+})
 
 //Function Change url param
 function changeParam() {
@@ -130,7 +151,17 @@ function changeVideo() {
     $('#desc video').hover(function () {
         
     });
+
+    changePhoto();
     changeDesc();
+}
+
+//Change member photo
+function changePhoto() {
+    let photo = memberImages[index][imgIndex];
+    $('#mem-img').fadeTo(300, 0.5, function() {
+        $('#mem-img').attr('src', photo);
+    }).fadeTo(300, 1);
 }
 
 //Change member description

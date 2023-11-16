@@ -9,36 +9,45 @@
 </head>
 <body>
     <main>
-        <div id="photo">
-            <img id="prev" src="../assets/icon/sound_loud.png">
-            <div id="photo-viewer">
-                <img id="mem-img" src="../assets/images/image10.png">
+        <div id="viewer">
+            <div id="photo">
+                <img id="prev-img" src="../assets/icon/sound_loud.png">
+                <div id="photo-viewer">
+                    <img id="mem-img" src="">
+                </div>
+                <img id="next-img" src="../assets/icon/sound_loud.png">
             </div>
-            <img id="next" src="../assets/icon/sound_loud.png">
+            <div id="desc">
+                <video autoplay muted loop>
+                    <source src="" type="video/mp4" id="video-player">
+                </video>
+                <div id="member-info">
+                    <h2 id="mem-name"></h2>
+                    <ul>
+                        <li>Stage Name: </li>
+                        <li>Birth Name: </li>
+                        <li>English Name: </li>
+                        <li>Position: </li>
+                        <li>Birthday: </li>
+                        <li>Zodiac Sign: </li>
+                        <li>Chinese Zodiac Sign: </li>
+                        <li>Height: </li>
+                        <li>Weight: </li>
+                        <li>Blood Type: </li>
+                        <li>MBTI Type: </li>
+                        <li>Nationality: </li>
+                        <li>Representative Color: </li>
+                        <li>Representative Emoji: </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div id="desc">
-            <video autoplay muted loop>
-                <source src="../assets/videos/Minji.mp4" type="video/mp4" id="video-player">
-            </video>
-            <div id="member-info">
-                <h2 id="mem-name"></h2>
-                <ul>
-                    <li>Stage Name: </li>
-                    <li>Birth Name: </li>
-                    <li>English Name: </li>
-                    <li>Position: </li>
-                    <li>Birthday: </li>
-                    <li>Zodiac Sign: </li>
-                    <li>Chinese Zodiac Sign: </li>
-                    <li>Height: </li>
-                    <li>Weight: </li>
-                    <li>Blood Type: </li>
-                    <li>MBTI Type: </li>
-                    <li>Nationality: </li>
-                    <li>Representative Color: </li>
-                    <li>Representative Emoji: </li>
-                </ul>
-            </div>
+
+        <div id="member-arrow">
+            <button id="prev" class="left" >Prev</button>
+            <button id="next" class="right">Next</button>
+            <!-- <div id="prev" class="mem-arrow">Prev</div>
+            <div id="next" class="mem-arrow">Next</div> -->
         </div>
     </main>
 
