@@ -20,28 +20,32 @@ h1 {
 }
 
 
-button {
+.button {
 	position : absolute;
 	background : none;
 	border : 0;
 	color : grey;
-	font-size : 50px;
+	font-size : 75px;
 	top : 50%;
 	z-index : 2;
 	transform : translateY(-50%);
 	padding : 5px;
+	transition: color 700ms ease-in,
+				background-color 600ms ease-in;
+	border-radius : 10%
 }
 
-button:hover,
-button:focus{
+.button:hover,
+.button:active{
 	color : white;
+	background-color : black;
 }
 
-.prev {
+.button.prev {
 	left:15px;
 }
 
-.next {
+.button.next {
 	right:15px;
 }
 
@@ -67,6 +71,10 @@ button:focus{
 	opacity:0.75;
 }
 
+.slide-dots .k1 {
+	background-color : white;
+}
+
 .slide-text{
 	width : 75vw;
 	height : 15vh;
@@ -74,4 +82,5 @@ button:focus{
 	margin : 0 auto;
 	background-color : grey;
 	color : white;
+	margin-bottom : 10px;
 }
