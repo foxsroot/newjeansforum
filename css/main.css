@@ -97,16 +97,17 @@ ul li ul li{
 
 }
 
-ul li ul li a{
-    font-size: 14px;
-    text-transform: uppercase;
-}
-
 ul ul li{
     list-style-type: none;
     text-align: center;
     word-spacing: 2px;
 }
+
+ul li ul li a{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
 
 footer {
     background-color: black;
