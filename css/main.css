@@ -59,39 +59,37 @@ nav ul ul{
     width: 120px;
 }
 
-
-
 nav ul li{
     position: relative;
 }
 
-nav ul li a::before{
+/* nav ul li a::before{
     content: '';
     left: 0px;
     bottom: 0;
     height: 4px;
     width: 0;
 	position: absolute;
-	transition: .7s;
-}
+	transition: .2s;
+} */
 
 
 ul li ul{
     position: absolute;
     background-color: black;
-    width:208px;
-    transition: .7s;
+    width:150px;
+    transition: .5s;
     opacity: 0;
     visibility: hidden;
-    margin-top: -25px;
-    left: -65px;
+    margin-top: -10px; /*penambahan margin top menambah speed muncul ul*/
+    left: -45px;
 }
 
 ul li:hover > ul{
     opacity: 1;
     visibility: visible;
     margin-top: 30px;
-    left: -65px;
+    left: -45px;
 }
 
 ul li ul li{
@@ -101,8 +99,7 @@ ul li ul li{
 
 ul li ul li a{
     font-size: 14px;
-    text-transform: capitalize;
-    padding: 15px;
+    text-transform: uppercase;
 }
 
 ul ul li{
