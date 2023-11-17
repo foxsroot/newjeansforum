@@ -43,28 +43,66 @@ nav ul li{
 nav ul li a {
     text-decoration: none;
     color: white;
-    
     /* padding : 0px 15px 0px 0px; */
 }
 
 nav ul li a:hover {
     text-shadow: 6px 2px 10px #ffffff ;
-
 }
 
 nav ul ul{
-    display: none;
+    /* display: none; ini menghilangkan nav-menu*/ 
     position: absolute;
     margin-top: 10px;
     padding-left: 5px;
     background-color:  black;
     width: 120px;
-    
 }
 
-nav ul li:hover > .nj-members{
-    display: block;
-   
+
+
+nav ul li{
+    position: relative;
+}
+
+nav ul li a::before{
+    content: '';
+    left: 0px;
+    bottom: 0;
+    height: 4px;
+    width: 0;
+	position: absolute;
+	transition: .7s;
+}
+
+
+ul li ul{
+    position: absolute;
+    background-color: black;
+    width:208px;
+    transition: .7s;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: -25px;
+    left: -65px;
+}
+
+ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 30px;
+    left: -65px;
+}
+
+ul li ul li{
+    width: 100%;
+
+}
+
+ul li ul li a{
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 15px;
 }
 
 ul ul li{
@@ -72,7 +110,6 @@ ul ul li{
     text-align: center;
     word-spacing: 2px;
 }
-
 
 footer {
     background-color: black;
