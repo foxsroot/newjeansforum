@@ -175,7 +175,7 @@ function changeDesc() {
         case 1:
             $(element[2]).text("Vietnamese Name: ");
             break;
-        case 3:
+        case 2:
             $(element[2]).text("Korean Name: ");
             break;
     }
