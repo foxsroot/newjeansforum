@@ -100,3 +100,13 @@ video {
 #next-img {
     width: 50px;
 }
+
+button {
+    background-color: white;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}

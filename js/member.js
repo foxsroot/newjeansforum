@@ -159,9 +159,13 @@ function changeVideo() {
 //Change member photo
 function changePhoto() {
     let photo = memberImages[index][imgIndex];
-    $('#mem-img').fadeTo(300, 0.5, function() {
+    if ($('#mem-img').attr('src') != "") {
+        $('#mem-img').fadeTo(300, 0.5, function() {
+            $('#mem-img').attr('src', photo);
+        }).fadeTo(300, 1);
+    } else {
         $('#mem-img').attr('src', photo);
-    }).fadeTo(300, 1);
+    }
 }
 
 //Change member description
