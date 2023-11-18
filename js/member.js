@@ -32,6 +32,8 @@ if (param == null || param == 0) {
     param = param.toLowerCase();
 }
 
+//Get Screen size
+let windowWidth = $(window).width();
 
 $(document).ready(function() {
     switch(param) {
@@ -59,20 +61,24 @@ $(document).ready(function() {
 })
 
 $("#desc").mouseenter(function() {
-    $("#member-info").css({
-        "height": "100%",
-        "background-color": "rgba(52, 40, 143, 0.5)",
-        "opacity": "1",
-        "transition": "all 0.4s ease"
-    })
+    if (windowWidth > 1023) {
+        $("#member-info").css({
+            "height": "100%",
+            "background-color": "rgba(52, 40, 143, 0.5)",
+            "opacity": "1",
+            "transition": "all 0.4s ease"
+        })
+    }
 })
 
 $("#desc").mouseleave(function() {
-    $("#member-info").css({
-        "height": "1px",
-        "opacity": "0",
-        "transition": "all 0.4s ease"
-    })
+    if (windowWidth > 1023) {
+        $("#member-info").css({
+            "height": "1px",
+            "opacity": "0",
+            "transition": "all 0.4s ease"
+        })
+    }
 })
 
 $("#prev").click(function() {
