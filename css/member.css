@@ -34,7 +34,7 @@ main {
     align-items: center;
     justify-content: center;
     height: 75vh;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 #photo {
@@ -42,20 +42,18 @@ main {
     align-items: center;
     justify-content: center;
     width: 50%;
-    border: solid 1px purple;
+    margin-left: 60px;
 }
 
 #desc {
     display: flex;
-    width: 50%;
-    margin: 9%;
-    border: solid 1px yellow;
+    width: 70%;
+    margin: 8%;
     position: relative;
 }
 
 #mem-img {
     display: flex;
-    /* height: 400px; */
     height: 26vw;
     border-radius: 20px;
 }
@@ -65,6 +63,7 @@ video {
     opacity: 1;
     position: relative;
     z-index: 0;
+    border-radius: 5px;
 }
 
 #member-info {
@@ -74,6 +73,7 @@ video {
     height: 1px;
     opacity: 0;
     overflow-y: scroll;
+    border-radius: 5px;
 }
 
 #member-info * {
@@ -157,24 +157,33 @@ video {
 
 
 /*Button start*/
-button {
-    background-color: white;
-    /* border-radius: 10px; */
-    border-radius: 3px;
-}
-
-button:hover {
-    background-color: black;
-    color: white;
-}
-
 #member-arrow {
     width: 100%;
     display: inline-block;
 }
 
-.left {
-    float: left;
+.mem-button {
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    width: 8vw;
+    height: 7vh;
+    text-align: center;
+    transition: ease 0.3s;
+}
+
+.mem-button p {
+    font-size: 2vh;
+}
+
+.mem-button:active {
+    transform: scale(0.9);
+}
+
+.mem-button:hover {
+    background-color: black;
+    color: white;
 }
 
 .right {
@@ -185,3 +194,5 @@ button:hover {
     display: inline-block;
     margin: 10px;
 }
+
+/*Button End*/
