@@ -1,3 +1,4 @@
+/*Start-Scrollbar*/
 /* width */
 #member-info::-webkit-scrollbar {
     width: 3px;
@@ -17,6 +18,7 @@
 #member-info::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
+/*End-Scrollbar*/
 
 main {
     width: 80%;
@@ -95,10 +97,14 @@ video {
 
 #prev-img {
     width: 50px;
+    position: relative;
+    /* border: 1px solid white; */
 }
 
 #next-img {
     width: 50px;
+    position: relative;
+    /* border: 1px solid white; */
 }
 
 button {
@@ -110,3 +116,67 @@ button:hover {
     background-color: black;
     color: white;
 }
+
+/*Arrow Start*/
+.arrow {
+    cursor: pointer;
+    position: relative;
+    transition: transform .1s;
+    height: 50px;
+}
+  
+.arrow-top,
+.arrow-bottom {
+    top: 50%;
+    background-color: #666;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+}
+
+.arrow-top {
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+}
+
+.arrow-bottom {
+    transform: rotate(-45deg);
+    transform-origin: top right;
+}
+
+.arrow-top:after,
+.arrow-bottom:after {
+    background-color: #fff;
+    content: '';
+    width: 0;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    transition-delay: 0.15s;
+    transition: ease 0.5s;
+}
+
+.arrow:hover .arrow-top:after {
+    width: 100%;
+    background-color: white;
+}
+
+.arrow:hover .arrow-bottom:after {
+    width: 100%;
+    background-color: white;
+}
+
+.arrow:active {
+    transform: scale(0.9);
+}
+
+.arrow-mirrored {
+    transform: scaleX(-1);
+}
+
+.arrow-mirrored:active {
+    transform: scaleX(-1) scale(0.9);
+}
+
+/*Arrow end*/
