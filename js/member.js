@@ -38,7 +38,7 @@ $(document).ready(function() {
         case "minji":
             index = 0;
             break;
-        case "hani":
+        case "hanni":
             index = 1;
             break;
         case "danielle":
@@ -123,7 +123,7 @@ function changeParam() {
             memberName = "minji";
             break;
         case 1:
-            memberName = "hani";
+            memberName = "hanni";
             break;
         case 2:
             memberName = "danielle";
@@ -159,9 +159,13 @@ function changeVideo() {
 //Change member photo
 function changePhoto() {
     let photo = memberImages[index][imgIndex];
-    $('#mem-img').fadeTo(300, 0.5, function() {
+    if ($('#mem-img').attr('src') != "") {
+        $('#mem-img').fadeTo(300, 0.5, function() {
+            $('#mem-img').attr('src', photo);
+        }).fadeTo(300, 1);
+    } else {
         $('#mem-img').attr('src', photo);
-    }).fadeTo(300, 1);
+    }
 }
 
 //Change member description
