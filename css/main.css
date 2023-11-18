@@ -1,3 +1,12 @@
+@font-face {
+    font-family: robotoSlab;
+    src: url("../assets/fonts/static/RobotoSlab-Regular.ttf") format("truetype");
+}
+
+body {
+    font-family: robotoSlab;
+}
+
 body {
    background-color: #141414; 
    margin: 0;

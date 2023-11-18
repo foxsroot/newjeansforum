@@ -1,17 +1,19 @@
 /*Start-Scrollbar*/
 /* width */
 #member-info::-webkit-scrollbar {
-    width: 3px;
+    width: 5px;
 }
   
 /* Track */
 #member-info::-webkit-scrollbar-track {
     background: #f1f1f1; 
+    border-radius: 10px;
 }
    
 /* Handle */
 #member-info::-webkit-scrollbar-thumb {
     background: #888; 
+    border-radius: 10px;
 }
   
 /* Handle on hover */
@@ -19,6 +21,7 @@
     background: #555; 
 }
 /*End-Scrollbar*/
+
 
 main {
     width: 80%;
@@ -52,13 +55,9 @@ main {
 
 #mem-img {
     display: flex;
-    height: 400px;
+    /* height: 400px; */
+    height: 26vw;
     border-radius: 20px;
-}
-
-#prev, #next {
-    width: 50px;
-    margin: 10px;
 }
 
 video {
@@ -82,42 +81,17 @@ video {
 }
 
 
-#member-arrow {
-    width: 100%;
-    display: inline-block;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-
+/*Arrow Start*/
 #prev-img {
     width: 50px;
     position: relative;
-    /* border: 1px solid white; */
 }
 
 #next-img {
     width: 50px;
     position: relative;
-    /* border: 1px solid white; */
 }
 
-button {
-    background-color: white;
-    border-radius: 10px;
-}
-
-button:hover {
-    background-color: black;
-    color: white;
-}
-
-/*Arrow Start*/
 .arrow {
     cursor: pointer;
     position: relative;
@@ -180,3 +154,34 @@ button:hover {
 }
 
 /*Arrow end*/
+
+
+/*Button start*/
+button {
+    background-color: white;
+    /* border-radius: 10px; */
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+#member-arrow {
+    width: 100%;
+    display: inline-block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+#prev, #next {
+    display: inline-block;
+    margin: 10px;
+}
