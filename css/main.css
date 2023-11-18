@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Libre+Franklin&family=Pixelify+Sans&display=swap');
+@font-face {
+    font-family: robotoSlab;
+    src: url("../assets/fonts/static/RobotoSlab-Regular.ttf") format("truetype");
+}
+
+body {
+    font-family: robotoSlab;
+}
+
 body {
    background-color: #141414; 
    margin: 0;
