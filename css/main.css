@@ -129,6 +129,11 @@ footer p{
     padding-top: 0px;
     
 }
+
+.width-footer{
+    width: 100000000px;
+}
+
 footer p a{
     color: white;
     text-decoration: none;
@@ -137,6 +142,7 @@ footer p a{
 footer ul{
     word-spacing: 40px;
     padding-right: 40px;
+
 }
 
 footer ul li{
