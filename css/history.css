@@ -1,0 +1,10 @@
+body {
+	margin : 0px;
+}
+
+.border{
+	width : 70vw;
+	height : 85vh;
+	position : relative;
+	margin : 0 auto;
+}
