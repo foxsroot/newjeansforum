@@ -27,3 +27,12 @@ $("#next").click(function() {
 
     changeHistory(index);
 })
+
+$('.tombol').on('click', function () {
+    if ($(this).hasClass('next')) {
+        i = (i + 1);
+    }else {
+        i = (i - 1 + content.length);
+    }
+    update();
+});
