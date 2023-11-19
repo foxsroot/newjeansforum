@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/members.css">
+    <link rel="stylesheet" href="../css/members_responsive.css">
     <title>Members</title>
 </head>
 <body>
     <main>
-        <div id="row-1">
+        <div class="members-photo">
+            <img src="../assets/images/members_photo03.jpg" id="members-photo-viewer">
+            </div>
+        </div>
+
+        <div class="members">
             <figure class="member-box">
                 <img src="../assets/images/image7.png">
                 <figcaption>
@@ -18,16 +24,16 @@
                 </figcaption>
                 <a href="member.html?member=minji"></a>
             </figure>
-
+    
             <figure class="member-box">
                 <img src="../assets/images/image5.png">
                 <figcaption>
                     <h3>하니</h3>
                     <p>Hanni</p>
                 </figcaption>
-                <a href="member.html?member=hani"></a>
+                <a href="member.html?member=hanni"></a>
             </figure>
-
+    
             <figure class="member-box">
                 <img src="../assets/images/image4.png">
                 <figcaption>
@@ -36,9 +42,7 @@
                 </figcaption>
                 <a href="member.html?member=danielle"></a>
             </figure>
-        </div>
-
-        <div id="row-2">
+    
             <figure class="member-box">
                 <img src="../assets/images/image6.png">
                 <figcaption>
@@ -57,6 +61,9 @@
                 <a href="member.html?member=hyein"></a>
             </figure>
         </div>
+
+        <script src="../js/jquery-3.7.1.js"></script>
+        <script src="../js/members.js"></script>
     </main>
 </body>
 </html>
