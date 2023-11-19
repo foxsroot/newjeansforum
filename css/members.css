@@ -1,5 +1,19 @@
 main {
     text-align: center;
+    margin: auto;
+}
+
+.members-photo img {
+    margin: auto;
+    text-align: center;
+    display: block;
+    width: 70vw;
+}
+
+.members {
+    max-width: 75vw;
+    text-align: center;
+    margin: auto;
 }
 
 .member-box {
