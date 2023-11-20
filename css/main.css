@@ -15,7 +15,6 @@ body {
     margin-top: -20px;
     float: left;
     height: 90px;
-    /* border: solid 1px white; */
 }
 
 .nav-menu {
@@ -25,7 +24,6 @@ body {
 }
 
 nav {
-    /* background-color: black; */
     background-color: black;
     width: 100%;
     height: 50px;
@@ -35,7 +33,7 @@ nav {
 nav ul {
     display: inline-block;
     /* border: solid 1px white; */
-    word-spacing: 60px;
+    word-spacing: 10vw;
     margin-bottom: 10px;
 }
 nav ul li{
@@ -160,5 +158,14 @@ footer ul li a{
     text-decoration: none;
 }
 
+main, .border, .swiper, .swiper-wrapper, .swiper-slide {
+    max-width: 100%;
+    overflow-y: visible;
+    height: 100%;
+}
 
-
+@media screen and (max-width: 640px) {
+    nav ul li {
+        right: 25px;
+    }
+}
