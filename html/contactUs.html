@@ -1,29 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/member.css">
     <link rel="stylesheet" href="../css/member_responsive.css">
-    <link rel="stylesheet" href="../css/arrow.css"> -->
+    <link rel="stylesheet" href="../css/arrow.css">
     <title>Contact Us</title>
 </head>
+<style>
+    @font-face {
+        font-family: robotoSlab;
+        src: url("../assets/fonts/static/RobotoSlab-Regular.ttf") format("truetype");
+    }
+
+    .container {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    form {
+        border: 1px solid gray;
+        padding: 30px;
+        background-color: darkgray;
+        color: black;
+    }
+
+    label {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    textarea {
+        width: 70%;
+        padding: 8px;
+        font-size: 14px;
+        border-radius: 3px;
+        border: 1px solid #dddddd;
+    }
+
+    /* #telp, #pesanelektrik, #line, #join, #experience{
+        display: none;
+    } */
+
+    input[type="submit"] {
+        background-color: #333333;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+</style>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script>
+    
+    //     var adminName = document.getElementById("adminName").value;
+    //             var telp = document.getElementById("telp").value;
+    //             var pesanelektrik = document.getElementById("pesanelektrik").value;
+    //             var join = document.getElementById("join").value;
+    //             var experience = document.getElementById("experience").value;
+
+    //             if (adminName === "" || telp === "" || pesanelektrik === "" || join === "" || experience === "") {
+    //                 alert("Mohon agar tidak ada yang kosong");
+    //             } else {
+    //                 alert("Formulir valid, data dapat dikirimkan.");
+    //             }
+    
+    $(document).ready(function () {
+        $("#adminName").keyup(function () {
+            $("#telp").slideDown();
+        });
+        $("#telp").keyup(function () {
+            $("#pesanelektrik").fadeIn();
+        });
+        $("#pesanelektrik").keyup(function () {
+            $("#line").slideDown();
+        });
+        $("#line").keyup(function () {
+            $("#join").fadeIn();
+        });
+        $("#join").keyup(function () {
+            $("#experience").fadeIn();
+        });
+    });
+
+    $(document).ready(function () {
+        $("#submit").click(function () {
+            alert("Terimakasih telah mengisi")
+        });
+    });
+
+
+</script>
 
 <body>
-    <div class = "container">
+    <div class="container">
         <h1>Contact Us</h1>
-       
-        <fieldset>
-            <legend>Personal details</legend>
-                <label for="admin's name">Nama:</label><br>
-                <input type="text" id="admin's name" name="nama" required placeholder="Full name please"> <br>
-                <label for="telp">No.Telp:</label><br>
-                <input type="number" id="telp" name="telepon"required placeholder="08xxxxxxxxxx"><br>
-                <label for="line">Line:</label><br>
-                <input type="text" id="line" name="idline"><br>
-                <label for="pesanelektrik">Email:</label><br>
-				<input type="email" id="pesanelektrik" name="email" required placeholder="example@domain.com" size="20"><br>
-        </fieldset>
+        <form>
+            <label for="admin's name">Nama:</label><br>
+            <input type="text" id="admin's name" name="nama" required placeholder="Full name please" autocomplete="off"> <br>
+            <label for="telp">No.Telp:</label><br>
+            <input type="text" id="telp" name="telepon" required placeholder="08xxxxxxxxxx" autocomplete="off"><br>
+            <label for="pesanelektrik">Email:</label><br>
+            <input type="email" id="pesanelektrik" name="email" required placeholder="example@domain.com" autocomplete="off"><br>
+            <label for="line">Line:</label><br>
+            <input type="text" id="line" name="idline" autocomplete="off"><br>
+
+            <label for="join">Alasan Ketertarikan Untuk Join:</label><br>
+            <textarea id="join" name="join" rows="4" cols="50" autocomplete="off"></textarea><br>
+            <label for="experience">Daftar Pengalaman Kerja:</label><br>
+            <textarea id="experience" name="pengalama" rows="4" cols="50" autocomplete="off"></textarea><br>
+
+            <input type="submit" value="Tambahkan Posting" />
+        </form>
+
     </div>
 </body>
