@@ -3,26 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="../css/banner.css">
-    <script src="../js/nav-bar.js"></script>
-    <script src="../js/banner.js"></script>
+    <link rel = "stylesheet" href = "css/history.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/nav-bar.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/history.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <style>
+        .swiper {
+           width: 600px;
+           height: 300px;
+         }
+     </style>
     <title>NewJeans Forum</title>
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html"><img id="nav-logo" src="../images/newjeans-logo-website.png"></a>
+            <a href="index.html"><img id="nav-logo" src="assets/logo/newjeans-logo-website.png"></a>
             <ul>
                 <li class="nav-menu"><a href="index.html">HOME</a></li>
-                <li class="nav-menu"><a href="#">MEMBERS</a></li>
-                <li class="nav-menu"><a href="#">FORUMS</a></li>
+                <li class="nav-menu"><a href="html/members.html">MEMBERS</a>  
+                    <ul class = "nj-members">
+                        <li><a href = "html/member.html">Kim Minji</a></li>
+                        <li><a href = "html/member.html">Pham Hanni</a></li>
+                        <li><a href = "html/member.html">Kang Haerin</a></li>
+                        <li><a href = "html/member.html">Danielle Marsh</a></li>
+                        <li><a href = "html/member.html">Lee Hyein</a></li>
+                    </ul></li>
+                <li class="nav-menu"><a href="html/articles.html">FORUMS</a></li>
             </ul>
         </nav>
 
     </header>
 
     <main>
+        
         <section class="banner-container">
             <h1>LATEST RELEASE</h1>
             <div class="banner">
@@ -44,10 +63,58 @@
 				<p> halo1</p>
 			</div>
 	    </section>
+
+        <div class="border">
+            <div class="text">
+                <p id="history-text">test</p>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h1>PENAMAAN</h1>
+                        <p>Nama NewJeans memiliki dua arti. Pertama, menekankan bahwa jeans adalah busana yang tak lekang oleh waktu, mencerminkan keinginan grup untuk menciptakan citra abadi. Kedua, sebagai permainan kata dari "gen baru (new genes)," merujuk pada peran mereka sebagai pengantar generasi baru musik pop.</p>
+                    </div>
+                    
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                </div>
+        </div>
+        <div class = "apapun">
+            <img class = "circle" src = "assets/Number1.png" onclick="changeHistory(0)">
+            <img class = "circle" src = "assets/Number2.png" onclick="changeHistory(1)">
+            <img class = "circle" src = "assets/Number3.png" onclick="changeHistory(2)">
+            <img class = "circle" src = "assets/Number4.png" onclick="changeHistory(3)">
+            <img class = "circle" src = "assets/Number5.png" onclick="changeHistory(4)">
+        </div>
+        <!-- <button class="button next" id="next">&#8677;</button>
+        <button class="button prev" id="prev">&#8676;</button> -->
+        
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <script>
+                const swiper = new Swiper('.swiper', {
+                    loop: true,
+            
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            </script>
+        </div>
     </main>
 
     <footer>
-
+        <p><a href = "https://www.youtube.com/@NewJeans_official">Newjeans Official YouTube Channel</a></p>
+            
+        <ul>
+            <li><a href = "html/authors.html">Author</a></li>
+            <li><a href = "html/references.html">Reference</a></li>
+            <li><a href = "#">Contact Us</a></li>
+        </ul>
+    
+        <p>&copy; Copyright 2023</p>
     </footer>
 </body>
 </html>

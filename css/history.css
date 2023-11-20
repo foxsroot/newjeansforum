@@ -1,0 +1,34 @@
+
+.border{
+	width : 70vw;
+	height : 85vh;
+	position : relative;
+	margin : 0 auto;
+	border: 1px solid white;
+}
+
+/* .tombol {
+	margin-top: 205px;
+	position : absolute;
+	background : none;
+	border : 0;
+	color : grey;
+	font-size : 75px;
+	top : 50%;
+	z-index : 2;
+	transform : translateY(-50%);
+	padding : 5px;
+	transition: color 700ms ease-in,
+				background-color 600ms ease-in;
+	border-radius : 10%
+} */
+.circle{
+	position:relative;
+	width: 50px;
+	left: 550px;
+	bottom: 100px;
+	margin-right: 10px;
+}
+
+
+
