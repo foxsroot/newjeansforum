@@ -5,17 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/banner.css">
-    <link rel = "stylesheet" href = "css/history.css">
+    <link rel="stylesheet" href ="css/history.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/background_video.css">
-    <script src="js/jquery-3.7.1.js"></script>
-    <!-- <script src="js/background_video.js"></script> -->
-    <script src="js/nav-bar.js"></script>
-    <script src="js/banner.js"></script>
-    <!-- <script src="js/history.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>NewJeans Forum</title>
 </head>
 <body>
@@ -40,14 +33,13 @@
 
     <main>
         <div class="welcome">
-            <video autoplay loop muted id="videoBackground">
+            <video autoplay loop id="videoBackground">
                 <source src="assets/videos/bgvideo_home.mp4" type="video/mp4">
-                <!-- Sisipkan sumber video di atas -->
             </video>
-        
-            <div id="muteButton" onclick="toggleMute()">
-                <img src="../assets/icon/sound_loud.png" alt="tombol" width="100px">
+            <div id="muteButton">
+                <img src="" alt="tombol" id="mtbtn">
             </div>        
+        
         </div>
         <h1>LATEST RELEASE</h1>
         <section class="banner-container">
@@ -72,9 +64,6 @@
 	    </section>
 
         <div class="border">
-            <!-- <div class="text">
-                <p id="history-text">test</p>
-            </div> -->
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -103,9 +92,6 @@
                 </div>
         </div>
         
-        <!-- <button class="button next" id="next">&#8677;</button>
-        <button class="button prev" id="prev">&#8676;</button> -->
-        
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
 
@@ -120,6 +106,7 @@
                 });
             </script>
         </div>
+        <audio src="assets/sounds/NewJeans - OMG (Instrumental).mp3" loop id="bg-audio"></audio>
     </main>
 
     <footer>
@@ -133,6 +120,10 @@
     
         <p>&copy; Copyright 2023</p>
     </footer>
-
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/background_video.js"></script>
+    <script src="js/nav-bar.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>

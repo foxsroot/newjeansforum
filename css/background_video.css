@@ -9,25 +9,18 @@ body {
 }
 
 #videoBackground {
+    margin-top: -17px;
     position: relative;
-    /* right: 0;
-    bottom: 0; */
-    /* min-width: 100%;
-    min-height: 100%; */
     width: 100%;
-    height: auto;
     z-index: -1;
-    overflow-x: hidden;
 }
 
-#muteButton {
-    position: relative;
-    top: 10px;
-    left: 10px;
+#muteButton img {
+    height: 75px;
+    width: auto;
+    position: fixed;
+    top: 87vh;
+    right: 15px;
     cursor: pointer;
-}
-.content{
-    background-color: rgba(255, 255, 255, 0.7);
-    margin: 0;
-    padding: 10px;
+    z-index: 2;
 }
