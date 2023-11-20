@@ -2,118 +2,70 @@
 <html>
   <head>
     <title>Forum Grup Idol</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-      }
-      h1 {
-        color: #333333;
-        text-align: center;
-        padding-top: 40px;
-      }
-      .container {
-        width: 600px;
-        margin: 0 auto;
-      }
-      form {
-        background-color: #ffffff;
-        padding: 30px;
-        border-radius: 5px;
-        margin-bottom: 20px;
-      }
-      label {
-        display: block;
-        margin-bottom: 8px;
-      }
-      input[type="text"],
-      textarea {
-        width: 100%;
-        padding: 8px;
-        font-size: 14px;
-        border-radius: 3px;
-        border: 1px solid #dddddd;
-      }
-      input[type="submit"] {
-        background-color: #333333;
-        color: #ffffff;
-        border: none;
-        padding: 10px 20px;
-        font-size: 16px;
-        border-radius: 3px;
-        cursor: pointer;
-      }
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-      li {
-        background-color: #ffffff;
-        padding: 20px;
-        border-radius: 5px;
-        margin-bottom: 10px;
-      }
-      h3 {
-        margin: 0 0 10px;
-      }
-      p {
-        margin: 0;
-      }
-      
-    </style>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-
+    <link rel="stylesheet" href="../css/forums.css">
+    <link rel="stylesheet" href="../css/main.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        // Fungsi untuk menambahkan posting baru
-        $("form").submit(function (event) {
-          event.preventDefault();
-
-          var judul = $("#judul").val();
-          var isi = $("#isi").val();
-
-          if (judul !== "" && isi !== "") {
-            var postingBaru = $(
-              "<li><h3>" + judul + "</h3><p>" + isi + "</p></li>"
-            );
-            $("ul").append(postingBaru);
-
-            $("form")[0].reset();
-          } else {
-            alert("Mohon lengkapi semua kolom input.");
-          }
-        });
-      });
-    </script>
   </head>
   <body>
-    <div class="container">
-      <h1>Selamat datang di Forum Grup Idol</h1>
+    <header>
+      <nav>
+          <a href="/index.html"><img id="nav-logo" src="/assets/logo/web-logo.png"></a>
+          <ul>
+              <li class="nav-menu"><a href="/index.html">HOME</a></li>
+              <li class="nav-menu"><a href="/html/members.html">MEMBERS</a>  
+                  <ul class = "nj-members">
+                      <li><a href = "/html/member.html?member=minji">Kim Minji</a></li>
+                      <li><a href = "/html/member.html?member=hanni">Pham Hanni</a></li>
+                      <li><a href = "/html/member.html?member=haerin">Kang Haerin</a></li>
+                      <li><a href = "/html/member.html?member=danielle">Danielle Marsh</a></li>
+                      <li><a href = "/html/member.html?member=hyein">Lee Hyein</a></li>
+                  </ul></li>
+              <li class="nav-menu"><a href="/html/article.html">FORUMS</a></li>
+          </ul>
+      </nav>
+    </header>
 
-      <!-- Form untuk membuat posting baru -->
-      <h2>Buat Posting Baru</h2>
-      <form>
-        <label for="judul">Judul:</label>
-        <input type="text" id="judul" name="judul" /><br /><br />
-        <label for="isi">Isi Posting:</label><br />
-        <textarea id="isi" name="isi" rows="4" cols="50"></textarea><br /><br />
-        <input type="submit" value="Tambahkan Posting" />
-      </form>
+    <main>
+      <div class="container">
+        <h1>Selamat datang di Forum Grup Idol</h1>
+  
+        <!-- Form untuk membuat posting baru -->
+        <h2>Buat Posting Baru</h2>
+        <form>
+          <label for="judul">Judul:</label>
+          <input type="text" id="judul" name="judul" /><br /><br />
+          <label for="isi">Isi Posting:</label><br />
+          <textarea id="isi" name="isi" rows="4" cols="50"></textarea><br /><br />
+          <input type="submit" value="Tambahkan Posting" />
+        </form>
+  
+        <!-- Daftar posting yang sudah ada -->
+        <h2>Posting Terkini</h2>
+        <ul>
+          <li>
+            <h3>Judul Posting 1</h3>
+            <p>Ini adalah isi dari posting 1.</p>
+          </li>
+          <li>
+            <h3>Judul Posting 2</h3>
+            <p>Ini adalah isi dari posting 2.</p>
+          </li>
+        </ul>
+      </div>
+    </main>
 
-      <!-- Daftar posting yang sudah ada -->
-      <h2>Posting Terkini</h2>
+    <footer>
+      <p><a href = "https://www.youtube.com/@NewJeans_official">Newjeans Official YouTube Channel</a></p>
       <ul>
-        <li>
-          <h3>Judul Posting 1</h3>
-          <p>Ini adalah isi dari posting 1.</p>
-        </li>
-        <li>
-          <h3>Judul Posting 2</h3>
-          <p>Ini adalah isi dari posting 2.</p>
-        </li>
+          <li><a href = "/html/authors.html">Author</a></li>
+          <li><a href = "/html/references.html">Reference</a></li>
+          <li><a href = "#">Contact Us</a></li>
       </ul>
-    </div>
+      <p>&copy; Copyright 2023</p>
+    </footer>
+
+    <script src="../js/jquery-3.7.1.js"></script>
+    <script src="../js/forums.js"></script>
   </body>
 </html>
