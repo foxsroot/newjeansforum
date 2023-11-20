@@ -34,4 +34,3 @@ function changeHistory(index) {
 
 // let changeHistoryArray = Array.from(changeHistory);
 
-
