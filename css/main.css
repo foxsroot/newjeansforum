@@ -37,7 +37,9 @@ nav ul {
     margin-bottom: 10px;
 }
 nav ul li{
-    height: 40px;
+    position: relative;
+    height: 60px;
+    width: 60px;
 }
 
 nav ul li a {
@@ -61,10 +63,6 @@ nav ul ul{
     background-color:  black;
     width: 120px;
     z-index: 1;
-}
-
-nav ul li{
-    position: relative;
 }
 
 /* nav ul li a::before{
@@ -123,7 +121,7 @@ footer {
     position: absolute;
     height: 110px;
     width: 100%;
-    padding: 0 30px;
+    /* padding: 0 30px; */
     display: inline-block;
     text-align: center;
     margin-top: auto;
@@ -136,10 +134,6 @@ footer {
 footer p{
     padding-top: 0px;
     
-}
-
-.width-footer{
-    width: 100000000px;
 }
 
 footer p a{
@@ -164,7 +158,5 @@ footer ul li a{
     text-decoration: none;
 }
 
-footer ul li.apalah > a:hover{
-    text-shadow: 6px 2px 10px #ffffff ;
-}
+
 
