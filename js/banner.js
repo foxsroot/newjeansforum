@@ -1,16 +1,18 @@
-$(document).ready(function () {
-	var content = [
-		'https://www.youtube.com/embed/8pMReO11Ln8?si=omROYc2I_1GWVZt9',
-		'https://www.youtube.com/embed/iEr6m_QCtFo?si=teeH1NRrSMJ9QYyN',
-		'https://www.youtube.com/embed/GLGk6TGANP8?si=WUDbXeLaBosEhvF9'
+var content = [
+	'https://www.youtube.com/embed/8pMReO11Ln8?si=omROYc2I_1GWVZt9',
+	'https://www.youtube.com/embed/iEr6m_QCtFo?si=teeH1NRrSMJ9QYyN',
+	'https://www.youtube.com/embed/GLGk6TGANP8?si=WUDbXeLaBosEhvF9'
 	];
-	var text = [
-		"halo 1",
-		"Explore the city of Paris with HAERIN! Follow her fun-filled adventure and surprises as she discovers the beauty of this energetic city. With her unique personality and cheerfulness, HAERIN invites you to see Paris from a different perspective and takes you to places that will surely charm your heart! Don't miss HAERIN first vlog🎬 in Paris: Get ready for an extraordinary journey and discover the beautiful beauty of Paris city with HAERIN!",
-		"Ready yourself to witness the enticing performance of NewJeans as they perform their latest song of 'Super Shy' in a stunning Stage Cam footage at Kyunghee University! 🎤🌟 Don't miss out on the exciting and sensational of NewJeans presence!"
-	];
-	var i= 0;
 
+var text = [
+	"halo 1",
+	"Explore the city of Paris with HAERIN! Follow her fun-filled adventure and surprises as she discovers the beauty of this energetic city. With her unique personality and cheerfulness, HAERIN invites you to see Paris from a different perspective and takes you to places that will surely charm your heart! Don't miss HAERIN first vlog🎬 in Paris: Get ready for an extraordinary journey and discover the beautiful beauty of Paris city with HAERIN!",
+	"Ready yourself to witness the enticing performance of NewJeans as they perform their latest song of 'Super Shy' in a stunning Stage Cam footage at Kyunghee University! 🎤🌟 Don't miss out on the exciting and sensational of NewJeans presence!"
+	];
+
+var i= 0;
+
+$(document).ready(function () {
 	$('.slide-dots p').on('click', function () {
         i = $(this).index();
 		update();
