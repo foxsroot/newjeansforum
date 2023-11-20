@@ -5,7 +5,7 @@ var content = [
 	];
 
 var text = [
-	"halo 1",
+	"Dive deep into the world of denim magic with NewJeans in the exclusive behind-the-scenes of the [Light Jeans] LEVI'S® 501 CUSTOMIZATION Hero Campaign! 🧢✨ Ever wondered how iconic denim pieces come to life? Join NewJeans on a journey behind the curtain as they unveil the secrets, creativity, and passion that fuel the LEVI'S® 501 CUSTOMIZATION Hero Campaign. 👖",
 	"Explore the city of Paris with HAERIN! Follow her fun-filled adventure and surprises as she discovers the beauty of this energetic city. With her unique personality and cheerfulness, HAERIN invites you to see Paris from a different perspective and takes you to places that will surely charm your heart! Don't miss HAERIN first vlog🎬 in Paris: Get ready for an extraordinary journey and discover the beautiful beauty of Paris city with HAERIN!",
 	"Ready yourself to witness the enticing performance of NewJeans as they perform their latest song of 'Super Shy' in a stunning Stage Cam footage at Kyunghee University! 🎤🌟 Don't miss out on the exciting and sensational of NewJeans presence!"
 	];
