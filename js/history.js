@@ -12,25 +12,22 @@ function changeHistory(index) {
     $("#history-text").text(history[index]);
 }
 
-// $("#prev").click(function() {
-//     index--;
-//     if (index < 0) {
-//         index = history.length - 1;
-//     }
+$("#prev").click(function() {
+    index--;
+    if (index < 0) {
+        index = history.length - 1;
+    }
 
-//     changeHistory(index);
-// })
+    changeHistory(index);
+})
 
-// $("#next").click(function() {
-//       index++;
-//     if (index >= history.length) {
-//         index = 0;
-//     }
+$("#next").click(function() {
+      index++;
+    if (index >= history.length) {
+        index = 0;
+    }
 
-//     changeHistory(index);
-// })
+    changeHistory(index);
+})
 
-// let changeHistory = document.getElementsByClassName("swiper-slide");
-
-// let changeHistoryArray = Array.from(changeHistory);
 

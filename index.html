@@ -6,19 +6,16 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/banner.css">
     <link rel = "stylesheet" href = "css/history.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/background_video.css">
     <script src="js/jquery-3.7.1.js"></script>
+    <!-- <script src="js/background_video.js"></script> -->
     <script src="js/nav-bar.js"></script>
     <script src="js/banner.js"></script>
-    <script src="js/history.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- <script src="js/history.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <style>
-        .swiper {
-           width: 800px;
-           height: 400px;
-           margin-top: 70px;
-         }
-     </style>
+    <script src="js/swiper.js"></script>
     <title>NewJeans Forum</title>
 </head>
 <body>
@@ -42,6 +39,16 @@
     </header>
 
     <main>
+        <div class="welcome">
+            <video autoplay loop muted id="videoBackground">
+                <source src="assets/videos/bgvideo_home.mp4" type="video/mp4">
+                <!-- Sisipkan sumber video di atas -->
+            </video>
+        
+            <div id="muteButton" onclick="toggleMute()">
+                <img src="../assets/icon/sound_loud.png" alt="tombol" width="100px">
+            </div>        
+        </div>
         <h1>LATEST RELEASE</h1>
         <section class="banner-container">
             <div class="banner">
@@ -103,14 +110,14 @@
             <div class="swiper-button-next"></div>
 
             <script>
-                const swiper = new Swiper('.swiper', {
-                    loop: true,
-            
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                });
+            const swiper = new Swiper('.swiper', {
+            loop: true,
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
             </script>
         </div>
     </main>
