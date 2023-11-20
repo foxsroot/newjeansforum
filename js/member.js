@@ -35,6 +35,26 @@ if (param == null || param == 0) {
 //Get Screen size
 let windowWidth = $(window).width();
 
+$(window).resize(function () {
+    windowWidth = $(window).width();;
+    console.log(windowWidth);
+
+    if (windowWidth < 1024) {
+        $("#member-info").css({
+            "background-color": "rgba(0,0,0,0)",
+            "height": "100%",
+            "opacity": "1"
+        })
+    } else {
+        $("#member-info").css({
+            "background-color": "rgba(52, 40, 143, 0.5)",
+            "height": "0",
+            "transition": "all 0.4s ease",
+            "opacity": "0"
+        })
+    }
+});
+
 $(document).ready(function() {
     switch(param) {
         case "minji":
@@ -61,7 +81,7 @@ $(document).ready(function() {
 })
 
 $("#desc").mouseenter(function() {
-    if (windowWidth > 1023) {
+    if (windowWidth > 1024) {
         $("#member-info").css({
             "height": "100%",
             "background-color": "rgba(52, 40, 143, 0.5)",
@@ -72,7 +92,7 @@ $("#desc").mouseenter(function() {
 })
 
 $("#desc").mouseleave(function() {
-    if (windowWidth > 1023) {
+    if (windowWidth > 1024) {
         $("#member-info").css({
             "height": "1px",
             "opacity": "0",
