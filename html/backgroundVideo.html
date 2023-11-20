@@ -2,45 +2,20 @@
 <html>
 <head>
     <title>Latar Belakang Video</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            /* overflow: hidden; */
-        }
-
-        #videoBackground {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: -1;
-        }
-
-        #muteButton {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            cursor:pointer;
-        }
-        .content{
-            background-color: rgba(255, 255, 255, 0.7);
-            margin: 0;
-            padding: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/backgroundVideo.css">
 </head>
 <body>
-    <video autoplay loop muted id="videoBackground">
-        <source src="HAPPYB~1.MP4" type="video/mp4">
-        <!-- Sisipkan sumber video di atas -->
+
+    <video autoplay loop id="videoBackground">
+        <source src="../assets/videos/bgvideo_home.mp4" type="video/mp4">
     </video>
 
+    <div class="judul">
+        <h1>NEWJEANS</h1>
+        <p>Welcome to Newjeans' Fanpage</p>
+    </div>
     <div id="muteButton" onclick="toggleMute()">
-        <img src="Bunga-Kamboja.jpeg" alt="tombol" width="100px">
+        <img src="../assets/icon/sound_loud.png" alt="tombol" width="50px" class="tombol">
     </div>
 
     <div class="content">
@@ -83,53 +58,6 @@
     </div>
 
 
-    <script>
-        var video = document.getElementById("videoBackground");
-        var muteButton = document.getElementById("muteButton");
-        var moving = false;
-        var offsetX = 0;
-        var offsetY = 0;
-
-        muteButton.addEventListener('mousedown', function (e) {
-            moving = true;
-            offsetX = e.clientX - muteButton.offsetLeft;
-            offsetY = e.clientY - muteButton.offsetTop;
-            // muteButton.style.pointerEvents = 'none';
-        });
-
-        document.addEventListener('mousemove', function (e) {
-            if (moving) {
-                muteButton.style.left = e.clientX - offsetX + 'px';
-                muteButton.style.top = e.clientY - offsetY + 'px';
-            }
-        });
-
-        document.addEventListener('mouseup', function () {
-            moving = false;
-            // muteButton.style.pointerEvents = 'none';
-        });
-
-        function toggleMute() {
-            if (video.muted) {
-                video.muted = false;
-            } else {
-                video.muted = true;
-            }
-        }
-    </script>
+    <script src="../js/backgroundVideo.js"></script>
 </body>
 </html>
-
-    <!-- <script>
-        var video = document.getElementById("videoBackground");
-
-        function toggleMute() {
-            if (video.muted) {
-                video.muted = false;
-            } else {
-                video.muted = true;
-            }
-        }
-    </script> -->
-<!-- </body>
-</html> -->
