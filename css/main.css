@@ -4,6 +4,7 @@
 }
 
 body {
+    font-family: robotoSlab;
    background-color: #141414; 
    margin: 0;
    color: white;
@@ -48,7 +49,7 @@ nav ul li a {
     /* padding : 0px 15px 0px 0px; */
 }
 
-ul li a:hover {
+nav ul li a:hover {
     text-shadow: 6px 2px 10px #ffffff ;
     /* background-image: linear-gradient(120deg, black, grey );
     padding: 17px 0;
@@ -76,7 +77,7 @@ nav ul ul{
 } */
 
 
-ul li ul{
+nav ul li ul{
     position: absolute;
     background-color: black;
     width:150px;
@@ -87,7 +88,7 @@ ul li ul{
     left: -45px;
 }
 
-ul li:hover > ul{
+nav ul li:hover > ul{
     opacity: 1;
     visibility: visible;
     margin-top: 33px;
@@ -95,24 +96,24 @@ ul li:hover > ul{
     /* border: 1px solid white; */
 }
 
-ul li ul li{
+nav ul li ul li{
     width: 100%;
     
 }
 
-ul ul li{
+nav ul ul li{
     list-style-type: none;
     text-align: center;
     word-spacing: 2px;
     padding-top: 10px;
 }
 
-ul li ul li a{
+nav ul li ul li a{
     font-size: 14px;
     text-transform: uppercase;
 }
 
-ul ul li:hover{
+nav ul ul li:hover{
     background-image: linear-gradient(120deg, black, grey );
 }
 
