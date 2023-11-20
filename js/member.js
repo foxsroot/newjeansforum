@@ -61,7 +61,7 @@ $(document).ready(function() {
 })
 
 $("#desc").mouseenter(function() {
-    if (windowWidth > 1023) {
+    if (windowWidth > 1024) {
         $("#member-info").css({
             "height": "100%",
             "background-color": "rgba(52, 40, 143, 0.5)",
@@ -72,7 +72,7 @@ $("#desc").mouseenter(function() {
 })
 
 $("#desc").mouseleave(function() {
-    if (windowWidth > 1023) {
+    if (windowWidth > 1024) {
         $("#member-info").css({
             "height": "1px",
             "opacity": "0",
