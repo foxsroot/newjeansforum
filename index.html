@@ -3,29 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/jquery-3.7.1.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/banner.css">
     <link rel = "stylesheet" href = "css/history.css">
     <script src="js/jquery-3.7.1.js"></script>
     <script src="js/nav-bar.js"></script>
     <script src="js/banner.js"></script>
+    <script src="js/history.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <style>
+        .swiper {
+           width: 800px;
+           height: 400px;
+           margin-top: 70px;
+         }
+     </style>
     <title>NewJeans Forum</title>
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html"><img id="nav-logo" src="assets/images/newjeans-logo-website.png"></a>
+            <a href="index.html"><img id="nav-logo" src="assets/logo/newjeans-logo-website.png"></a>
             <ul>
                 <li class="nav-menu"><a href="index.html">HOME</a></li>
-                <li class="nav-menu"><a href="html/members.html">MEMBERS</a></li>
-                <li class="nav-menu"><a href="html/forums.html">FORUMS</a></li>
+                <li class="nav-menu"><a href="html/members.html">MEMBERS</a>  
+                    <ul class = "nj-members">
+                        <li><a href = "html/member.html">Kim Minji</a></li>
+                        <li><a href = "html/member.html">Pham Hanni</a></li>
+                        <li><a href = "html/member.html">Kang Haerin</a></li>
+                        <li><a href = "html/member.html">Danielle Marsh</a></li>
+                        <li><a href = "html/member.html">Lee Hyein</a></li>
+                    </ul></li>
+                <li class="nav-menu"><a href="html/articles.html">FORUMS</a></li>
             </ul>
         </nav>
 
     </header>
 
     <main>
+        
         <section class="banner-container">
             <h1>LATEST RELEASE</h1>
             <div class="banner">
@@ -47,10 +64,74 @@
 				<p> halo1</p>
 			</div>
 	    </section>
+
+        <div class="border">
+            <div class="text">
+                <p id="history-text">test</p>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- <div class="swiper-slide">
+                        <h1>PENAMAAN</h1>
+                        <p>Nama NewJeans memiliki dua arti. Pertama, menekankan bahwa jeans adalah busana yang tak lekang oleh waktu, mencerminkan keinginan grup untuk menciptakan citra abadi. Kedua, sebagai permainan kata dari "gen baru (new genes)," merujuk pada peran mereka sebagai pengantar generasi baru musik pop.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>AKTIVITAS PRA-DEBUT</h1>
+                        <p>Fakta mengejutkan bahwa jauh sebelum Newjeans terbentuk, beberapa anggota grup sudah aktif di industri hiburan. Danielle adalah anggota reguler dari Rainbow Kindergarten tvN, sebuah variety show yang ditayangkan pada tahun 2011.Hyein memulai debutnya sebagai anggota grup musik anak-anak U.SSO Girl pada November 2017 dengan nama panggung U.Jeong, sebelum berangkat dari grup satu tahun kemudian.Pada Desember 2020, ia bergabung dengan grup musik dan kolektif YouTube Play With Me Club yang dibentuk oleh PocketTV, dan lulus dari grup tersebut pada 3 Mei 2021. Hanni dan Minji menjadi cameo di video musik BTS tahun 2021 untuk "Permission to Dance</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>PEMBENTUKAN GRUP NEWJEANS</h1>
+                        <h2>2019 - 2020 :</h2> 
+                        <p>Persiapan untuk girl grup baru hasil kolaborasi antara Big Hit Entertainment dan Source Music dimulai pada awal 2019 di bawah arahan Min Hee-Jin yang bergabung dengan perusahaan sebagai CBO pada tahun yang sama dan dikenal luas atas arahan seninya sebagai direktur visual di SM Entertainment. Audisi global berlangsung antara September dan Oktober 2019 dan casting grup dimulai pada awal tahun 2020. </p>
+                        <h2>2021 - 2022 :</h2> 
+                        <p>Newjeans dijadwalkan untuk diluncurkan, tapi ditunda karena pandemi Covid-19 dan proyek itu dipindahkan ke label independen ADOR milik Hybe yang baru didirikan, setelah Min ditunjuk sebagai CEO label tersebut. Putaran kedua audisi global diadakan antara Desember 2021 dan Januari 2022, dan susunan grup diselesaikan pada Maret 2022.' </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>PROSES DEBUT</h1>
+                        <p>Proses debut mereka dimulai dengan merilis tiga video animasi pada 1 Juli 2022, yang diikuti oleh peluncuran single debut "Attention" pada 22 Juli yang diikuti dengan pengumuman Mini Album debut mereka yang akan datang, yang akan berisi empat lagu, termasuk dua single tambahan. EP Debut mereka yang berisi empat lagu mendapat respon positif, dengan pre-order melebihi 444.000 salinan dalam tiga hari. Album debut mereka terjual lebih dari satu juta salinan, menjadi album debut terlaris oleh artis wanita K-pop di Korea Selatan sejak 2011. Grup ini memenangkan berbagai penghargaan pendatang baru dan debut di berbagai tangga lagu. Lagu terbaru mereka, "Ditto," mencapai kesuksesan besar dan menjadi entri pertama mereka di Billboard Hot 100. Album pertama mereka, "OMG," meraih kesuksesan lebih lanjut dengan tema gaya retronya dan debut di nomor satu di Circle Album Chart.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>PERJALANAN SUKSES TERBARU 2023</h1>
+                        <p>Pada April 2023, NewJeans merilis kolaborasi dengan Coca-Cola untuk "Zero." Single kedua, "Be Who You Are (Real Magic)," dirilis pada Mei 2023, dikerjakan sama dengan Coca-Cola bersama Jon Batiste, JID, dan Camilo. Fanmeeting pertama mereka, Bunnies Camp, diadakan pada 1-2 Juli 2023. Album mini kedua, "Get Up," dirilis pada 21 Juli 2023, menempati posisi kedua di Circle Album Chart. Album ini terjual 1,65 juta salinan dalam minggu pertama peluncurannya, menjadi album ketiga berturut-turut grup yang terjual lebih dari satu juta kopi. Single "Super Shy" mendominasi tangga lagu, membawa NewJeans meraih posisi pertama di Billboard Emerging Artists. Grup tampil di festival-festival besar seperti Lollapalooza dan Summer Sonic Festival di Amerika Serikat.</p>
+                    </div> -->
+                </div>
+        </div>
+        <div class = "apapun">
+            <img class = "circle" src = "assets/Number1.png" onclick="changeHistory(0)">
+            <img class = "circle" src = "assets/Number2.png" onclick="changeHistory(1)">
+            <img class = "circle" src = "assets/Number3.png" onclick="changeHistory(2)">
+            <img class = "circle" src = "assets/Number4.png" onclick="changeHistory(3)">
+            <img class = "circle" src = "assets/Number5.png" onclick="changeHistory(4)">
+        </div>
+        <!-- <button class="button next" id="next">&#8677;</button>
+        <button class="button prev" id="prev">&#8676;</button> -->
+        
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <script>
+                const swiper = new Swiper('.swiper', {
+                    loop: true,
+            
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            </script>
+        </div>
     </main>
 
     <footer>
-
+        <p><a href = "https://www.youtube.com/@NewJeans_official">Newjeans Official YouTube Channel</a></p>
+            
+        <ul>
+            <li><a href = "html/authors.html">Author</a></li>
+            <li><a href = "html/references.html">Reference</a></li>
+            <li><a href = "#">Contact Us</a></li>
+        </ul>
+    
+        <p>&copy; Copyright 2023</p>
     </footer>
 </body>
 </html>
