@@ -12,8 +12,9 @@ body {
 
 
 #nav-logo {
+    margin-top: -20px;
     float: left;
-    height: 50px;
+    height: 90px;
     /* border: solid 1px white; */
 }
 
