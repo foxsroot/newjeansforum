@@ -1,41 +1,101 @@
 body {
 	margin: 0;
-}
-
-.author {
-	width : 55vw;
-	position : relative;
-	margin : 0 auto;
-}
-
-.content {
-	position : relative;
-	text-align : center;
+	background-color : black;
+	color: white;
 }
 
 h1 {
-    margin-bottom: 30px;
-	padding-bottom : 10px;
 	text-align: center;
 }
 
 ul {
 	list-style : none;
-	padding-left: 0;
+	padding-left : 0;
 }
 
 li {
 	display : inline-block;
-	padding-left: 0;
 }
 
-.Authors {
-	margin : 20px;
+.Authors{
+    display: flex;
+    justify-content: center;
 }
 
-.images {
-    background-image: url("");
-    background-repeat: no-repeat;
-    height: 400px;
-	width : 300px
+.author {
+    width: 21%; 
+    margin: 15px;
+}
+
+.content {
+	position : relative;
+}
+
+img{
+	width : 200px;
+	height : 400px;
+}
+
+
+li.socials {
+	width : 43px;
+	height : 44px;
+	background : url('preview-modified-modif-modified.png') no-repeat;
+	border-radius : 50%;
+}
+
+li.socials a{
+	text-decoration : none;
+}
+
+li.socials.github {
+	background-position-x :-140.5px ;
+	background-position-y : -260px;
+}
+
+li.socials.linkedin {
+	background-position-x :-380.5px ;
+	background-position-y : -20px;
+}
+
+li.socials.instagram {
+	background-position-x :-200.5px ;
+	background-position-y : -20px;
+}
+
+li.socials.github:hover {
+	background-color : grey;
+}
+
+li.socials.linkedin:hover  {
+	background-color : #0072b1;
+}
+
+li.socials.instagram:hover {
+	background-color : #c13584;
+}
+
+@media all and (max-width: 840px) {
+	
+    .Authors {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    .author {
+        width: 34%;
+        margin: 20px 30px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .Authors {
+        max-width: 65%;
+        margin: 0 auto;
+    }
+
+    .author {
+        width: 45%;
+        margin: 20px 35px;
+    }
 }
