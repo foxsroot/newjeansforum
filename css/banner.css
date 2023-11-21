@@ -53,9 +53,10 @@ h1 {
 .slide-dots {
 	display : flex;
 	column-gap : 15px;
-	position : absolute;
-	right : 47%;
-	top : 74%;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin-top: 5px;
 	z-index:2;
 }
 
@@ -72,9 +73,9 @@ h1 {
 }
 
 .slide-text{
-	margin : 55px auto 10px auto;
+	margin : 0px auto 50px auto;
 	width : 73vw;
-	height : 15vh;
+	height : auto;
 	position : relative;
 	border : 2px solid grey;
 	padding : 5px 10px;
@@ -116,11 +117,6 @@ h1 {
 		right:1px;
 	}
 
-	.slide-dots {
-		top : 56%;
-		right : 43%;
-	}
-
 	.slide-dots p {
 		width : 15px;
 		height : 15px;
@@ -128,7 +124,7 @@ h1 {
 
 	.slide-text{
 		width : 68vw;
-		height : 20vh;
+		height : auto;
 		position : relative;
 		font-size : 15px;
 	}
@@ -137,7 +133,7 @@ h1 {
 @media all and (max-width : 520px) {
 
 	.banner{
-		width : 60vw;
+		width : 95vw;
 		height : 30vh;
 	}
 
@@ -152,9 +148,8 @@ h1 {
 	}
 
 	.slide-text{
-		margin-top: 15px;
-		width : 63vw;
-		height : 20vh;
+		width : 85vw;
+		height : auto;
 		font-size : 12px;
 	}
 }
