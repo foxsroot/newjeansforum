@@ -17,14 +17,13 @@ let nationality = ["Korean", "Vietnamese-Australian", "Korean-Australian", "Kore
 let repColor = ["Yellow", "Pink", "Green", "White", "Light Blue"];
 let repEmoji = ["🐻", "🐰", "🐶", "🐹", "🐣"];
 
-//Get Parameter & Index
+
 var url_param = new URLSearchParams(window.location.search);
 param = url_param.get('member');
 
 let index;
 let imgIndex = 0;
 
-//Check if parameter is not present
 if (param == null || param == 0) {
     index = 0;
     changeParam();
@@ -32,7 +31,6 @@ if (param == null || param == 0) {
     param = param.toLowerCase();
 }
 
-//Get Screen size
 let windowWidth = $(window).width();
 
 $(window).resize(function () {
@@ -141,7 +139,7 @@ $("#next-img").click(function() {
     changePhoto();
 })
 
-//Function Change url param
+
 function changeParam() {
     let memberName;
     switch(index) {
@@ -167,7 +165,6 @@ function changeParam() {
     changeVideo();
 }
 
-//Change video regarding parameter value
 function changeVideo() {
     let video = memberVideos[index];
     
@@ -182,7 +179,6 @@ function changeVideo() {
     changeDesc();
 }
 
-//Change member photo
 function changePhoto() {
     let photo = memberImages[index][imgIndex];
     if ($('#mem-img').attr('src') != "") {
@@ -194,7 +190,7 @@ function changePhoto() {
     }
 }
 
-//Change member description
+
 function changeDesc() {
     $("#mem-name").append(memName[index]);
     let element = document.getElementById("member-info").getElementsByTagName("li");

@@ -1,23 +1,19 @@
 $(document).ready(function () {
-    $("#adminName").keyup(function () {
-        $("#telp").slideDown();
-    });
-    $("#telp").keyup(function () {
-        $("#pesanelektrik").fadeIn();
-    });
-    $("#pesanelektrik").keyup(function () {
-        $("#line").slideDown();
-    });
-    $("#line").keyup(function () {
-        $("#join").fadeIn();
-    });
-    $("#join").keyup(function () {
-        $("#experience").fadeIn();
-    });
+  $("#submit").click(function () {
+    ValidateForm();
+  });
 });
 
-$(document).ready(function () {
-    $("#submit").click(function () {
-        alert("Terimakasih telah mengisi")
-    });
-});
+function ValidateForm() {
+  var formInvalid = false;
+  $("form").each(function () {
+    if ($(this).val() === "") {
+      formInvalid = true;
+    }
+  });
+
+  if (formInvalid) {
+      alert("Terimakasih telah mengisi");
+  }
+}
+

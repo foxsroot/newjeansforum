@@ -19,6 +19,8 @@ main h1 {
 
 form {
     border: 1px solid gray;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     padding: 30px;
     background-color: darkgray;
     color: black;
@@ -30,12 +32,20 @@ label {
 }
 
 input[type="text"],
-textarea {
+textarea, input[type="email"] {
     width: 70%;
     padding: 8px;
     font-size: 14px;
     border-radius: 3px;
     border: 1px solid #dddddd;
+}
+
+textarea {
+    max-width: 70%;
+    min-width: 70%;
+    min-height: 150px;
+    max-height: 150px;
+    overflow-y: scroll;
 }
 
 input[type="submit"] {

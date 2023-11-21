@@ -1,27 +1,20 @@
-/*Start-Scrollbar*/
-/* width */
 #member-info::-webkit-scrollbar {
     width: 5px;
 }
   
-/* Track */
 #member-info::-webkit-scrollbar-track {
     background: #f1f1f1; 
     border-radius: 10px;
 }
    
-/* Handle */
 #member-info::-webkit-scrollbar-thumb {
     background: #888; 
     border-radius: 10px;
 }
   
-/* Handle on hover */
 #member-info::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
-/*End-Scrollbar*/
-
 
 main {
     width: 80%;
@@ -34,7 +27,6 @@ main {
     align-items: center;
     justify-content: center;
     height: 75vh;
-    /* border: 1px solid white; */
 }
 
 #photo {
@@ -80,7 +72,6 @@ video {
     margin-left: 15px;
 }
 
-/*Button start*/
 #member-arrow {
     width: 100%;
     display: inline-block;
@@ -118,5 +109,3 @@ video {
     display: inline-block;
     margin: 10px;
 }
-
-/*Button End*/
