@@ -7,17 +7,17 @@ h2 {
     margin-bottom: -15px;
 }
 
-ul li {
+main ul li {
     line-height: 45px;
 }
 
-ul li a {
+main ul li a {
     color: white;
     font-size: larger;
     position: relative;
 }
 
-ul li a:before {
+main ul li a:before {
     content: '';
     transition: all 0.4s ease;
     position: absolute;
@@ -30,20 +30,20 @@ ul li a:before {
     height: 85%;
 }
 
-ul li a:hover:before {
+main ul li a:hover:before {
     z-index: -1;
     opacity: 1;
     width: 100%;
 }
 
-ul li a:hover {
+main ul li a:hover {
     color: rgb(69, 163, 221);
 }
 
-ul li a:active {
+main ul li a:active {
     color: #fff;
 }
 
-ul li a:active:before {
+main ul li a:active:before {
     background-color: rgb(69, 163, 221);
 }

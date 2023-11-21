@@ -1,6 +1,11 @@
 main {
     text-align: center;
     margin: auto;
+    padding: 0;
+}
+
+.members-photo {
+    margin-top: 15px;
 }
 
 .members-photo img {

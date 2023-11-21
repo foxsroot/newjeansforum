@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/member.css">
-    <link rel="stylesheet" href="../css/member_responsive.css">
-    <link rel="stylesheet" href="../css/arrow.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../js/contact.js">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Contact Us</title>
 </head>
 <style>
@@ -101,25 +101,55 @@
 </script>
 
 <body>
-    <div class="container">
-        <h1>Contact Us</h1>
-        <form>
-            <label for="admin's name">Nama:</label><br>
-            <input type="text" id="admin's name" name="nama" required placeholder="Full name please" autocomplete="off"> <br>
-            <label for="telp">No.Telp:</label><br>
-            <input type="text" id="telp" name="telepon" required placeholder="08xxxxxxxxxx" autocomplete="off"><br>
-            <label for="pesanelektrik">Email:</label><br>
-            <input type="email" id="pesanelektrik" name="email" required placeholder="example@domain.com" autocomplete="off"><br>
-            <label for="line">Line:</label><br>
-            <input type="text" id="line" name="idline" autocomplete="off"><br>
+    <header>
+        <nav>
+            <a href="/index.html"><img id="nav-logo" src="/assets/logo/web-logo.png"></a>
+            <ul>
+                <li class="nav-menu"><a href="/index.html">HOME</a></li>
+                <li class="nav-menu"><a href="/html/members.html">MEMBERS</a>  
+                    <ul class = "nj-members">
+                        <li><a href = "/html/member.html?member=minji">Kim Minji</a></li>
+                        <li><a href = "/html/member.html?member=hanni">Pham Hanni</a></li>
+                        <li><a href = "/html/member.html?member=haerin">Kang Haerin</a></li>
+                        <li><a href = "/html/member.html?member=danielle">Danielle Marsh</a></li>
+                        <li><a href = "/html/member.html?member=hyein">Lee Hyein</a></li>
+                    </ul></li>
+                <li class="nav-menu"><a href="/html/article.html">FORUMS</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <label for="join">Alasan Ketertarikan Untuk Join:</label><br>
-            <textarea id="join" name="join" rows="4" cols="50" autocomplete="off"></textarea><br>
-            <label for="experience">Daftar Pengalaman Kerja:</label><br>
-            <textarea id="experience" name="pengalama" rows="4" cols="50" autocomplete="off"></textarea><br>
+    <main>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <form>
+                <label for="admin's name">Nama:</label><br>
+                <input type="text" id="admin's name" name="nama" required placeholder="Full name please" autocomplete="off"> <br>
+                <label for="telp">No.Telp:</label><br>
+                <input type="text" id="telp" name="telepon" required placeholder="08xxxxxxxxxx" autocomplete="off"><br>
+                <label for="pesanelektrik">Email:</label><br>
+                <input type="email" id="pesanelektrik" name="email" required placeholder="example@domain.com" autocomplete="off"><br>
+                <label for="line">Line:</label><br>
+                <input type="text" id="line" name="idline" autocomplete="off"><br>
+    
+                <label for="join">Alasan Ketertarikan Untuk Join:</label><br>
+                <textarea id="join" name="join" rows="4" cols="50" autocomplete="off"></textarea><br>
+                <label for="experience">Daftar Pengalaman Kerja:</label><br>
+                <textarea id="experience" name="pengalama" rows="4" cols="50" autocomplete="off"></textarea><br>
+    
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+    </main>
 
-            <input type="submit" value="Tambahkan Posting" />
-        </form>
-
-    </div>
+    <footer>
+        <p><a href = "https://www.youtube.com/@NewJeans_official">Newjeans Official YouTube Channel</a></p>
+        <ul>
+            <li><a href = "/html/authors.html">Author</a></li>
+            <li><a href = "/html/references.html">Reference</a></li>
+            <li><a href = "/html/contactUs.html">Contact Us</a></li>
+        </ul>
+        <p>&copy; Copyright 2023</p>
+      </footer>
+    <script src="../js/jquery-3.7.1.js"></script>
 </body>

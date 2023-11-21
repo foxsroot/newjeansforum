@@ -7,12 +7,12 @@ var sosmed = [['https://github.com/foxsroot',
 				'https://www.instagram.com/640509_040148/'],
 				
 			  ['https://github.com/adrianrenardkristanto',
-				'',
+				'https://www.linkedin.com',
 				'https://instagram.com/eidorian_681'],
 			  
-			  ['https://github.com',
+			  ['https://github.com/richi-51',
 				'https://www.linkedin.com',
-				'https://instagram.com']]
+				'https://instagram.com/richiewidjaya88']]
 
 $(document).ready(function () {
     $('img').hover(function () {
@@ -33,28 +33,8 @@ $(document).ready(function () {
 	);
 	
 	$('.socials').on('click', function() {
-		var list = $(this).closest('li.author').index();
-		var media,person;
-		if ($(this).parent().hasClass('social j')){
-			person = list
-		}else if ($(this).parent().hasClass('social h')){
-			person = list
-		}else if ($(this).parent().hasClass('social a')){
-			person = list
-		}else {
-			person = list
-		}
-		switch ($(this).index()){
-				case 0 :
-				media = $(this).index();
-				break;
-				case 1 :
-				media = $(this).index();
-				break;
-				case 2 :
-				media = $(this).index();
-				break;
-		}
+		var person = $(this).closest('li.author').index();
+		var media = $(this).index();
 		window.open(sosmed[person][media]);
 	});
 });
