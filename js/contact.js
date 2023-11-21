@@ -17,5 +17,3 @@ function ValidateForm() {
   }
 }
 
-$(document).ready(function () {
-});
