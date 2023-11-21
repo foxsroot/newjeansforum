@@ -9,7 +9,7 @@ $(document).ready(function () {
         var postingBaru = $(
           "<li><h3>" + judul + "</h3><p>" + isi + "</p></li>"
         );
-        $("ul").append(postingBaru);
+        $("main ul").append(postingBaru);
 
         $("form")[0].reset();
       } else {
