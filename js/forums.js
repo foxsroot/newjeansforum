@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    // Fungsi untuk menambahkan posting baru
     $("form").submit(function (event) {
       event.preventDefault();
 

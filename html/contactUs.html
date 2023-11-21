@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/contact.css">
-    <link rel="stylesheet" href="../js/contact.js">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Contact Us</title>
 </head>
@@ -32,22 +31,22 @@
     <main>
         <div class="container">
             <h1>Contact Us</h1>
-            <form>
-                <label for="admin's name">Nama:</label><br>
-                <input type="text" id="admin's name" name="nama" required placeholder="Full name please" autocomplete="off"> <br>
-                <label for="telp">No.Telp:</label><br>
+            <form id="formulir">
+                <label for="nama">Nama:</label><br>
+                <input type="text" id="admin" name="nama" required placeholder="Full name please" autocomplete="off"> <br>
+                <label for="telepon">No.Telp:</label><br>
                 <input type="text" id="telp" name="telepon" required placeholder="08xxxxxxxxxx" autocomplete="off"><br>
-                <label for="pesanelektrik">Email:</label><br>
+                <label for="email">Email:</label><br>
                 <input type="email" id="pesanelektrik" name="email" required placeholder="example@domain.com" autocomplete="off"><br>
-                <label for="line">Line:</label><br>
+                <label for="idline">Line:</label><br>
                 <input type="text" id="line" name="idline" autocomplete="off"><br>
     
                 <label for="join">Alasan Ketertarikan Untuk Join:</label><br>
                 <textarea id="join" name="join" rows="4" cols="50" autocomplete="off"></textarea><br>
                 <label for="experience">Daftar Pengalaman Kerja:</label><br>
-                <textarea id="experience" name="pengalama" rows="4" cols="50" autocomplete="off"></textarea><br>
+                <textarea id="experience" name="experience" rows="4" cols="50" autocomplete="off"></textarea><br>
     
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Submit" id="submit">
             </form>
         </div>
     </main>
@@ -62,4 +61,5 @@
         <p>&copy; Copyright 2023</p>
       </footer>
     <script src="../js/jquery-3.7.1.js"></script>
+    <script src="../js/contact.js"></script>
 </body>

@@ -15,7 +15,7 @@ var sosmed = [['https://github.com/foxsroot',
 				'https://instagram.com/richiewidjaya88']]
 
 $(document).ready(function () {
-    $('img').hover(function () {
+    $('main img').hover(function () {
 			var ini = $(this);
             $(this).siblings('div.content').animate({ top: '30px' },500);
 			setTimeout(function () {
